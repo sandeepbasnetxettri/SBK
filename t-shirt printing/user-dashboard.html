@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKB T-Shirt Printing | User Dashboard</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fa-solid fa-shirt"></i>
+                    <span>SKB Print</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Overview</a></li>
+                    <li><a href="#"><i class="fa-solid fa-palette"></i> My Designs</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bag-shopping"></i> My Orders</a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i> Favorites</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart <span class="badge">3</span></a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=User&background=6366f1&color=fff" alt="User">
+                    <div class="user-info">
+                        <p class="user-name">Sandeep Basnet</p>
+                        <p class="user-email">sandeep@example.com</p>
+                    </div>
+                </div>
+                <a href="index.html" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for designs, orders...">
+                </div>
+                <div class="header-actions">
+                    <button class="btn-icon"><i class="fa-solid fa-bell"></i><span class="dot"></span></button>
+                    <button class="btn-primary"><i class="fa-solid fa-plus"></i> Create New Design</button>
+                </div>
+            </header>
+
+            <div class="content-body">
+                <div class="welcome-section">
+                    <h1>Welcome back, Sandeep! 👋</h1>
+                    <p>Manage your custom prints and track your orders in real-time.</p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon icon-purple"><i class="fa-solid fa-shirt"></i></div>
+                        <div class="stat-info">
+                            <p class="stat-label">Total Designs</p>
+                            <h3 class="stat-value">12</h3>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon icon-blue"><i class="fa-solid fa-truck-fast"></i></div>
+                        <div class="stat-info">
+                            <p class="stat-label">Active Orders</p>
+                            <h3 class="stat-value">2</h3>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon icon-green"><i class="fa-solid fa-wallet"></i></div>
+                        <div class="stat-info">
+                            <p class="stat-label">Wallet Balance</p>
+                            <h3 class="stat-value">Rs. 1,500</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-grid">
+                    <!-- Recent Orders -->
+                    <section class="section-card recent-orders">
+                        <div class="section-header">
+                            <h2>Recent Orders</h2>
+                            <a href="#" class="view-all">View All</a>
+                        </div>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Item</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#SKB-1024</td>
+                                        <td>Premium Cotton Tee</td>
+                                        <td>Oct 24, 2023</td>
+                                        <td><span class="status-badge processing">Processing</span></td>
+                                        <td>Rs. 1,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#SKB-1019</td>
+                                        <td>Hoodie Custom Print</td>
+                                        <td>Oct 19, 2023</td>
+                                        <td><span class="status-badge shipped">Shipped</span></td>
+                                        <td>Rs. 2,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#SKB-1015</td>
+                                        <td>Corporate Polo (x5)</td>
+                                        <td>Oct 15, 2023</td>
+                                        <td><span class="status-badge delivered">Delivered</span></td>
+                                        <td>Rs. 6,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Saved Designs -->
+                    <section class="section-card saved-designs">
+                        <div class="section-header">
+                            <h2>Saved Designs</h2>
+                            <a href="#" class="view-all">Manage</a>
+                        </div>
+                        <div class="design-list">
+                            <div class="design-item">
+                                <div class="design-preview">
+                                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=200" alt="Design">
+                                </div>
+                                <div class="design-details">
+                                    <p class="design-name">Vibrant Summer</p>
+                                    <p class="design-date">Last edited 2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="design-item">
+                                <div class="design-preview">
+                                    <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=200" alt="Design">
+                                </div>
+                                <div class="design-details">
+                                    <p class="design-name">Minimalist Black</p>
+                                    <p class="design-date">Last edited 5 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

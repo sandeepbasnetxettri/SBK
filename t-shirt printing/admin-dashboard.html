@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | SKB T-Shirt Printing</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="admin-body">
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar admin-sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fa-solid fa-shirt"></i>
+                    <span>SKB Admin</span>
+                </div>
+                <span class="admin-tag">Console</span>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fa-solid fa-box-open"></i> Orders <span class="badge">12</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-users"></i> Customers</a></li>
+                    <li><a href="#"><i class="fa-solid fa-warehouse"></i> Inventory</a></li>
+                    <li><a href="#"><i class="fa-solid fa-palette"></i> Design Requests</a></li>
+                    <li><a href="#"><i class="fa-solid fa-file-invoice-dollar"></i> Finance</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Admin&background=1e293b&color=fff" alt="Admin">
+                    <div class="user-info">
+                        <p class="user-name">Admin Console</p>
+                        <p class="user-email">admin@skbprint.com</p>
+                    </div>
+                </div>
+                <a href="index.html" class="btn-logout"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="page-title">
+                    <h1>System Overview</h1>
+                    <p>Real-time analytics and management.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn-outline"><i class="fa-solid fa-download"></i> Export Report</button>
+                    <button class="btn-primary"><i class="fa-solid fa-plus"></i> New Product</button>
+                </div>
+            </header>
+
+            <div class="content-body">
+                <!-- Admin Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon icon-purple"><i class="fa-solid fa-sack-dollar"></i></div>
+                        <div class="stat-info">
+                            <p class="stat-label">Total Revenue</p>
+                            <h3 class="stat-value">Rs. 245,000</h3>
+                            <p class="stat-change positive"><i class="fa-solid fa-arrow-up"></i> 12.5%</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon icon-blue"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="stat-info">
+                            <p class="stat-label">Total Orders</p>
+                            <h3 class="stat-value">1,240</h3>
+                            <p class="stat-change positive"><i class="fa-solid fa-arrow-up"></i> 8.2%</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon icon-green"><i class="fa-solid fa-user-plus"></i></div>
+                        <div class="stat-info">
+                            <p class="stat-label">New Customers</p>
+                            <h3 class="stat-value">84</h3>
+                            <p class="stat-change positive"><i class="fa-solid fa-arrow-up"></i> 5.1%</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon icon-red"><i class="fa-solid fa-clock"></i></div>
+                        <div class="stat-info">
+                            <p class="stat-label">Pending Reviews</p>
+                            <h3 class="stat-value">15</h3>
+                            <p class="stat-change negative"><i class="fa-solid fa-arrow-down"></i> 2.4%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-grid">
+                    <!-- Manage Orders -->
+                    <section class="section-card manage-orders">
+                        <div class="section-header">
+                            <h2>Active Order Queue</h2>
+                            <div class="filter-group">
+                                <button class="btn-tab active">All</button>
+                                <button class="btn-tab">Pending</button>
+                                <button class="btn-tab">Printing</button>
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Customer</th>
+                                        <th>Type</th>
+                                        <th>Quantity</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="td-user">
+                                                <img src="https://ui-avatars.com/api/?name=John+Doe" alt="">
+                                                <span>John Doe</span>
+                                            </div>
+                                        </td>
+                                        <td>Sublimation</td>
+                                        <td>12 Pcs</td>
+                                        <td><span class="status-badge processing">Printing</span></td>
+                                        <td><button class="btn-sm">Manage</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="td-user">
+                                                <img src="https://ui-avatars.com/api/?name=Rita+Shrestha" alt="">
+                                                <span>Rita Shrestha</span>
+                                            </div>
+                                        </td>
+                                        <td>DTF Print</td>
+                                        <td>1 Pc</td>
+                                        <td><span class="status-badge shipped">Ready</span></td>
+                                        <td><button class="btn-sm">Manage</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="td-user">
+                                                <img src="https://ui-avatars.com/api/?name=Sam+K" alt="">
+                                                <span>Sam K.</span>
+                                            </div>
+                                        </td>
+                                        <td>Embroidery</td>
+                                        <td>5 Pcs</td>
+                                        <td><span class="status-badge delivered">Delivered</span></td>
+                                        <td><button class="btn-sm">Manage</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Inventory Alert -->
+                    <section class="section-card inventory-alerts">
+                        <div class="section-header">
+                            <h2>Stock Alerts</h2>
+                        </div>
+                        <div class="alert-list">
+                            <div class="alert-item warning">
+                                <div class="alert-content">
+                                    <p class="item-name">Black XL Cotton Tee</p>
+                                    <p class="item-stock">Only 5 left</p>
+                                </div>
+                                <button class="btn-sm">Restock</button>
+                            </div>
+                            <div class="alert-item danger">
+                                <div class="alert-content">
+                                    <p class="item-name">White DTF Film</p>
+                                    <p class="item-stock">Out of stock</p>
+                                </div>
+                                <button class="btn-sm">Order Now</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
